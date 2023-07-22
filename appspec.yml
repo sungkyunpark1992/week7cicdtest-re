@@ -3,9 +3,9 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/moduform
+    destination: /home/ubuntu/cicdapp
 permissions:
-  - object: /home/ubuntu/moduform/
+  - object: /home/ubuntu/cicdapp/
     owner: ubuntu
     group: ubuntu
 hooks:
