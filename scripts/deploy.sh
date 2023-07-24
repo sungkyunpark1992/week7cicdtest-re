@@ -20,6 +20,6 @@ fi
 
 echo "> Deploy - $JAR_PATH "
 #nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
-#nohup java -jar $JAR_PATH > /application.log 2> /error.log &
+#nohup java -jar $JAR_PATH > /application.log 2> /error.log & 이 안에 범인이 있다. 이게 내 결론이다.
 #nohup java -jar $JAR_PATH > /home/ubuntu/cicdapp/application.log 2> /home/ubuntu/cicdapp/error.log &
 sudo nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
