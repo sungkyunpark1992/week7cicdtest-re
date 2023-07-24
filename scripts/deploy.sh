@@ -29,7 +29,7 @@
 ##sudo nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
 #
 #nohup java -jar $JAR_NAME > $APP_LOG 2> $ERROR_LOG &
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
 REPOSITORY=/home/ubuntu/cicdapp
 cd $REPOSITORY
@@ -52,8 +52,8 @@ fi
 echo "> Deploy - $JAR_PATH "
 #nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
 
-sudo nohup java -jar retest-0.0.1-SNAPSHOT.jar > application.log 2> error.log &
-
+#nohup java -jar retest-0.0.1-SNAPSHOT.jar > application.log 2> error.log &
+nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
 
 
 
