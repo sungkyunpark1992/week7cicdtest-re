@@ -53,7 +53,7 @@ echo "> Deploy - $JAR_PATH "
 #nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
 
 #nohup java -jar retest-0.0.1-SNAPSHOT.jar > application.log 2> error.log &
-nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log < /dev/null &
+nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
 
 
 
