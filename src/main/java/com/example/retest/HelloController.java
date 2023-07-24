@@ -9,6 +9,6 @@ public class HelloController {
     @GetMapping("/hello")
     @CrossOrigin()
     public String hello(){
-        return "CICD - test - 아무거나 -제발 되라";
+        return "CICD - test - 아무거나 -제발 되라----";
     }
 }
