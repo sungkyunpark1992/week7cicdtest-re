@@ -50,7 +50,8 @@ sleep 5
 fi
 
 echo "> Deploy - $JAR_PATH "
-nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
+#nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
+sudo nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
 
 
 
