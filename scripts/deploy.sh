@@ -22,4 +22,4 @@ echo "> Deploy - $JAR_PATH "
 #nohup java -jar $JAR_PATH > /dev/null 2> /dev/null < /dev/null &
 #nohup java -jar $JAR_PATH > /application.log 2> /error.log &
 #nohup java -jar $JAR_PATH > /home/ubuntu/cicdapp/application.log 2> /home/ubuntu/cicdapp/error.log &
-nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
+sudo nohup java -jar $JAR_PATH > $REPOSITORY/application.log 2> $REPOSITORY/error.log &
